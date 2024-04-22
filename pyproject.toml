@@ -10,6 +10,14 @@ packages = [{ include = "molbox", from = "src" }]
 python = "^3.12"
 rdkit = "^2023.9.5"
 
+[tool.poetry.group.test.dependencies]
+pytest = "^8.1.1"
+
+[tool.ruff]
+extend-select = ["I"]
+
+[tool.pyright]
+reportAttributeAccessIssue = false
 
 [build-system]
 requires = ["poetry-core"]
