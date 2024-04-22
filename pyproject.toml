@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "molbox"
+version = "0.1.0"
+description = ""
+authors = ["Niklas Kappel <niklas.kappel@kit.edu>"]
+readme = "README.md"
+packages = [{ include = "molbox", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rdkit = "^2023.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
