@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "molbox"
-version = "0.1.0"
+version = "0.1.1"
 description = "Create simulation boxes for LAMMPS."
 authors = ["Niklas Kappel <niklas.kappel@kit.edu>"]
 readme = "README.md"
