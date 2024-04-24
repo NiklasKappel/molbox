@@ -1,5 +1,5 @@
-import numpy as np
 import pytest
+import numpy as np
 from molbox.rdkit_3d_ops import (
     create_3d_mol_from_smiles,
     get_center_of_mass,
