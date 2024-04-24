@@ -1,6 +1,14 @@
 # molbox
 
-Molbox is a simple Python package that extends [rdkit](https://www.rdkit.org/) with spatial [transformations](src/molbox/rdkit_3d_ops.py) of 3D molecules and semantics for multiple molecules in a rectangular [box](src/molbox/molbox.py). It allows you to quickly create simulation boxes and write them to data files that can be read by [LAMMPS](https://www.lammps.org/), like in this [example](examples/create_o2_box.py):
+Molbox is a simple Python package that extends [rdkit](https://www.rdkit.org/) with spatial [transformations](src/molbox/rdkit_3d_ops.py) of 3D molecules and semantics for multiple molecules in a rectangular [box](src/molbox/molbox.py). It allows you to quickly create simulation boxes and write them to data files that can be read by [LAMMPS](https://www.lammps.org/).
+
+## Installation
+
+```
+pip install molbox
+```
+
+## Usage
 
 ```python
 from molbox import Box, MolBox
