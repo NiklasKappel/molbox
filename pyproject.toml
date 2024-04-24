@@ -10,6 +10,7 @@ packages = [{ include = "molbox", from = "src" }]
 python = "^3.12"
 rdkit = "^2023.9.5"
 scipy = "^1.13.0"
+openbabel-wheel = "^3.1.1.19"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.1.1"

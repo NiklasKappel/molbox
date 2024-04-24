@@ -5,7 +5,7 @@ import numpy as np
 from rdkit import Chem
 
 from molbox.box import Box
-from molbox.rdkit_helpers import translate_mol
+from molbox.rdkit_3d_ops import translate_mol
 
 
 class MolBox:

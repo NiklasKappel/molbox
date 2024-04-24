@@ -1,5 +1,6 @@
 from molbox import Box, MolBox
-from molbox.rdkit_helpers import create_3d_mol_from_smiles, rotate_mol
+from molbox.lammps_data import write_lammps_data
+from molbox.rdkit_3d_ops import create_3d_mol_from_smiles, rotate_mol
 from scipy.spatial.transform import Rotation
 
 
@@ -12,6 +13,7 @@ def main():
         rotation = Rotation.random(random_state=42)
         new_mol = rotate_mol(o2_mol, rotation, "COM")
         o2_box.add_mol_randomly(new_mol)
+    write_lammps_data(o2_box, "examples/o2_box.lmpdat")
 
 
 if __name__ == "__main__":
