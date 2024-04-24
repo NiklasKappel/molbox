@@ -18,6 +18,9 @@ pre-commit = "^3.7.0"
 [tool.poetry.group.test.dependencies]
 pytest = "^8.1.1"
 
+[tool.poetry.urls]
+repository = "https://github.com/NiklasKappel/molbox"
+
 [tool.pyright]
 reportAttributeAccessIssue = false
 
