@@ -25,5 +25,7 @@ def write_lammps_data(molbox: MolBox, filename: str) -> None:
     pattern = r".*xlo xhi\n.*ylo yhi\n.*zlo zhi"
     lmpdata_block = re.sub(pattern, box_section, lmpdata_block)
 
+    lmpdata_block = lmpdata_block.rstrip() + "\n"
+
     with open(filename, "w") as f:
         f.write(lmpdata_block)
