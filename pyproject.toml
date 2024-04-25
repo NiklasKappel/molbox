@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "molbox"
-version = "0.1.1"
+version = "0.1.2"
 description = "Create simulation boxes for LAMMPS."
 authors = ["Niklas Kappel <niklas.kappel@kit.edu>"]
 readme = "README.md"
 packages = [{ include = "molbox", from = "src" }]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.9"
 rdkit = "^2023.9.5"
 scipy = "^1.13.0"
 openbabel-wheel = "^3.1.1.19"
