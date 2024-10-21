@@ -1,8 +1,9 @@
+from rdkit import Chem
+from scipy.spatial.transform import Rotation
+
 from molbox import Box, MolBox
 from molbox.lammps_data import write_lammps_data
 from molbox.rdkit_3d_ops import create_3d_mol_from_smiles, rotate_mol
-from rdkit import Chem
-from scipy.spatial.transform import Rotation
 
 
 def main():
