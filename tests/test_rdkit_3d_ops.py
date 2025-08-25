@@ -1,5 +1,7 @@
 import numpy as np
 import pytest
+from scipy.spatial.transform import Rotation
+
 from molbox.rdkit_3d_ops import (
     create_3d_mol_from_smiles,
     get_center_of_mass,
@@ -9,7 +11,6 @@ from molbox.rdkit_3d_ops import (
     translate_conformer,
     translate_mol,
 )
-from scipy.spatial.transform import Rotation
 
 
 @pytest.fixture
